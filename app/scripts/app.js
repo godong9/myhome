@@ -12,6 +12,22 @@ angular.module('myhomeApp', [
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })
+      .when('/portfolio', {
+        templateUrl: 'partials/portfolio',
+        controller: 'PortfolioCtrl'
+      })
+      .when('/resume', {
+        templateUrl: 'partials/resume',
+        controller: 'ResumeCtrl'
+      })
+      .when('/blog', {
+        templateUrl: 'partials/blog',
+        controller: 'BlogCtrl'
+      })
+      .when('/contact', {
+        templateUrl: 'partials/contact',
+        controller: 'ContactCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
