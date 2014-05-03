@@ -1,0 +1,265 @@
+* {
+      margin: 0px;
+      padding: 0px;
+    } 
+	h1 {
+		font: bold 20px verdana, sans-serif;
+	} 
+	h2 {
+		font: bold 14px verdana, sans-serif;
+	} 
+
+	header, section, footer, aside, nav, article, figure, figcaption, hgroup{
+		display: block;
+	}
+	body {
+		width: 100%;
+		display: -moz-box;
+		display: -webkit-box;
+		-moz-box-pack: center;
+		-webkit-box-pack: center;
+	}
+	li {
+		cursor: pointer;
+	}
+	#wrapper{
+		max-width: 960px;
+		margin: 15px 0px;
+		display: -moz-box;
+		display: -webkit-box;
+		-moz-box-orient: vertical;
+		-webkit-box-orient: vertical;
+		-moz-box-flex: 1;
+		-webkit-box-flex: 1;
+	}
+	#main_header {
+		background: #FFFBB9;
+		border: 1px solid #999999;
+		padding: 12px;
+	} 
+	#main_menu {
+		background: #CCCCCC;
+		padding: 3px 15px;
+	}
+	#main_menu li {
+		display: inline-block;
+		list-style: none;
+		padding: 5px;
+		font: bold 14px verdana, sans-serif;
+	}
+	#container {
+		display: -moz-box;
+		display: -webkit-box;
+		-moz-box-orient: horizontal;
+		-webkit-box-orient: horizontal;
+	}
+	#main_footer {
+		text-align: center;
+		padding: 20px;
+		border-top: 2px solid #999999;
+	} 
+
+	#login_box {
+		display: -moz-box;
+		display: -webkit-box;
+		-moz-box-orient: vertical;
+		-webkit-box-orient: vertical;
+		text-align:center;
+		margin-top: 100px;
+	}
+
+	#join_box {
+		display: -moz-box;
+		display: -webkit-box;
+		-moz-box-orient: vertical;
+		-webkit-box-orient: vertical;
+		text-align:center;
+		margin-top: 60px;
+	}
+
+	#btn_box {
+		margin-top: 10px;
+	}
+
+	#id_text {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	#pw_text {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.other_text_form {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.input_text_form {
+		width: 160px;
+		height: 20px;
+	}
+
+	#page_resume {
+		width: 100%;
+	}
+
+	#page_history {
+		width: 100%;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	#page_future {
+		width: 100%;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	#resume_title {
+		width: 25%;
+		height: 100%;
+		float: left;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	#history_main_title {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 2px;
+	}
+
+	#future_main_title {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 2px;
+	}
+
+	#resume_contents {
+		width: 75%;
+		height: 100%;
+		float: right;
+	}
+
+	#future_contents {
+		margin-left: 25%;
+	}
+
+	#image_contents {
+		margin-top: 10px;
+	}
+
+	.profile_form {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 20px;
+		margin-right: 20px;
+		text-align: left;
+	}
+
+	.resume_form {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	.edit_btn {
+		margin-left: 10px;
+		font: 11px verdana, sans-serif;
+	}
+
+	.resume_text_form {
+		margin-top: 6px;
+		margin-left: 4px;
+		width: 60%;
+		margin-bottom: 10px;
+		font: 12px verdana, sans-serif;
+	} 
+
+	#file_input {
+		margin-left: 22px;
+		margin-bottom: 4px;
+		text-align: center;
+	}
+
+	#history_input{
+		text-align: center;
+	}
+
+	.history_input_form{
+		width: 200px;
+		margin-top: 5px;
+		margin-right: 10px;
+		margin-bottom: 5px;
+	}
+
+	.history_input_form_double{
+		width: 420px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	.history_file_input{
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
+
+	.history_text_form {
+		width: 440px;
+		height: 80px;
+		margin-top: 2px;
+		margin-bottom: 2px;
+		font: 12px verdana, sans-serif;
+	} 
+
+	#history_add_btn {
+		width: 100px;
+		height: 30px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	#history_contents {
+		margin-top: 10px;
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+
+	#add_history_title {
+		margin-top: 20px;
+		margin-bottom: 5px;
+	}
+	
+	.history_contents_title {
+		margin-top: 6px;
+		margin-left: 6px;
+	}
+
+	.history_contents_form {
+		margin-top: 4px;
+		margin-bottom: 8px;
+		margin-left: 12px;
+		font: 12px verdana, sans-serif;
+	}
+
+	.history_contents_item {
+		margin-top: 8px;
+		margin-bottom: 8px;
+		padding-top: 4px;
+		padding-bottom: 6px;
+		padding-left: 4px;
+		padding-right: 4px;
+		border: 1px solid #000000;
+	}
+
+	.history_file_form {
+		margin-left: 10px;
+		font: 12px verdana, sans-serif;
+	}
