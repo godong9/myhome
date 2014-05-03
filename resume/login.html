@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Resume Management Service</title>
+	<link href="css/style.css" rel="stylesheet"  />
+</head>
+<body>
+	<div id="wrapper">
+		<header id="main_header">
+			<h1>Resume Management Service</h1>
+		</header>
+		<div id="login_box">
+			<form>
+				<div id="id_text">ID
+					<input id="id_val" class="input_text_form" type="text" />
+				</div>
+				<div id="pw_text">PW
+					<input id="pw_val" class="input_text_form" type="password" />
+				</div>
+			</form>
+			<div id="btn_box">
+				<button id="join_btn" style='display:inline;' onClick="onClickJoin()">회원가입</button>
+				<button id="login_btn" style='display:inline;' onClick="onClickLogin()">로그인</button>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script>
+		function onClickJoin(){
+			location.href="join.html";
+		}
+
+		function onClickLogin(){
+			var url = "login.jsp";
+			var id = $('#id_val').val();
+			var pw = $('#pw_val').val();
+
+			$.ajax({
+				url: url,
+				type: 'POST',
+				data: { id: id, pw: pw }, 
+				success: function(response, status, request){
+					var res = response.trim();	
+					if(res == "success"){
+						location.href="main.jsp";
+					}
+					else{
+						console.log(res);
+						alert("ID 또는 PW를 잘못 입력하였습니다!");
+					}
+				}
+			});
+		}
+	
+	</script>
+</body>
+</html>
