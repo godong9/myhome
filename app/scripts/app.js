@@ -28,6 +28,10 @@ angular.module('myhomeApp', [
         templateUrl: 'partials/contact',
         controller: 'ContactCtrl'
       })
+      .when('/admin', {
+        templateUrl: 'partials/admin',
+        controller: 'AdminCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
