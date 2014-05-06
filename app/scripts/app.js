@@ -28,6 +28,9 @@ angular.module('myhomeApp', [
         templateUrl: 'partials/contact',
         controller: 'ContactCtrl'
       })
+      .when('/login', {
+        templateUrl: 'partials/login'
+      })
       .when('/admin', {
         templateUrl: 'partials/admin',
         controller: 'AdminCtrl'
