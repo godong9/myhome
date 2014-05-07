@@ -9,8 +9,7 @@
         </div>
         <h2>Profile</h2>
         <div id="profile" class="profile_form">
-          <div id="profile_text" class="resume_text_form">
-            aaaa
+          <div id="profile_text" class="resume_text_form" ng-bind-html="resumeData.profile">
           </div>
         </div>
       </div>
@@ -18,26 +17,22 @@
       <div id="resume_right">
         <h2>Skills</h2>
         <div id="skills" class="resume_form">
-          <div id="skills_text" class="resume_text_form">
-            bbbb
+          <div id="skills_text" class="resume_text_form" ng-bind-html="resumeData.skills">
           </div>
         </div>
         <h2>Professional Experience</h2>
         <div id="experience" class="resume_form">
-          <div id="experience_text" class="resume_text_form">
-            cccc
+          <div id="experience_text" class="resume_text_form" ng-bind-html="resumeData.experience">
           </div>
         </div>
         <h2>Employment History</h2>
         <div id="history" class="resume_form">
-          <div id="history_text" class="resume_text_form">
-            dddd
+          <div id="history_text" class="resume_text_form" ng-bind-html="resumeData.history">
           </div>
         </div>
         <h2>Education</h2>
         <div id="education" class="resume_form">
-          <div id="education_text" class="resume_text_form">
-            eeee
+          <div id="education_text" class="resume_text_form" ng-bind-html="resumeData.education">
           </div>
         </div>
       </div>
