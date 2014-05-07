@@ -1,8 +1,10 @@
 'use strict';
 
 angular.module('myhomeApp')
-  .controller('AdminCtrl', function ($scope, $http) {
-//    $http.get('/api/admin').success(function(loginData) {
-//      console.log(loginData);
-//    });
+  .controller('AdminCtrl', function ($scope, $http, $location) {
+    $http.get('/api/admin').success(function(data) {
+      if(!data.state) {
+        $location.path('/login');
+      }
+    });
   });
