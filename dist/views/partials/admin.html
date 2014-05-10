@@ -1,0 +1,32 @@
+<div class="container partial_page">
+
+  <!-- Main component for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <form class="form-signin" action="/api/admin" method="post">
+      <h2 class="form-signin-heading">Please sign in</h2>
+      <div>
+        <label>Profile:</label>
+        <textarea type="text" name="profile" class="form-control" style="overflow:visible">{{adminData.profile}}</textarea>
+      </div> 
+      <div>
+        <label>Skills:</label>
+        <textarea type="text" name="skills" class="form-control" style="overflow:visible">{{adminData.skills}}</textarea>
+      </div> 
+      <div>
+        <label>Professional Experience:</label>
+        <textarea type="text" name="experience" class="form-control" style="overflow:visible">{{adminData.experience}}</textarea>
+      </div> 
+      <div>
+        <label>Employment History:</label>
+        <textarea type="text" name="history" class="form-control" style="overflow:visible">{{adminData.history}}</textarea>
+      </div> 
+      <div>
+        <label>Education:</label>
+        <textarea type="text" name="education" class="form-control" style="overflow:visible">{{adminData.education}}</textarea>
+      </div> 
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+    </form>
+  </div>
+
+</div> <!-- /container -->

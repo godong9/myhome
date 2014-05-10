@@ -1,0 +1,41 @@
+<div class="container resume_page">
+  <div class="jumbotron">
+    <h1>Daniel's Resume</h1>
+
+    <div id="page_resume">
+      <div id="resume_left">
+        <div id="image_contents">
+          <img id="profile_img" src="images/2802fc4f.my-image.jpg" border="1" width="120" height="160"><br>
+        </div>
+        <h2>Profile</h2>
+        <div id="profile" class="profile_form">
+          <div id="profile_text" class="resume_text_form" ng-bind-html="resumeData.profile">
+          </div>
+        </div>
+      </div>
+
+      <div id="resume_right">
+        <h2>Skills</h2>
+        <div id="skills" class="resume_form">
+          <div id="skills_text" class="resume_text_form" ng-bind-html="resumeData.skills">
+          </div>
+        </div>
+        <h2>Professional Experience</h2>
+        <div id="experience" class="resume_form">
+          <div id="experience_text" class="resume_text_form" ng-bind-html="resumeData.experience">
+          </div>
+        </div>
+        <h2>Employment History</h2>
+        <div id="history" class="resume_form">
+          <div id="history_text" class="resume_text_form" ng-bind-html="resumeData.history">
+          </div>
+        </div>
+        <h2>Education</h2>
+        <div id="education" class="resume_form">
+          <div id="education_text" class="resume_text_form" ng-bind-html="resumeData.education">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
