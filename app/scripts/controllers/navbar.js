@@ -8,6 +8,6 @@ angular.module('myhomeApp')
     }];
     
     $scope.isActive = function(route) {
-      return (route === $location.path())?"active":"";
+      return (route === $location.path())?'active':'';
     };
   });
